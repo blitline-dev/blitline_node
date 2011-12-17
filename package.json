@@ -5,9 +5,9 @@
   "version": "1.1.0",
   "repository": {
     "type" : "git",
-    "url": ""
+    "url": "https://github.com/blitline-dev/blitline_node"
   },
-  "main" : "main.js"
+  "main" : "main.js",
   "engines": {
     "node": "~0.4.9"
   },

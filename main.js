@@ -1,12 +1,9 @@
-/**
- * Require app
- */
+/* Sample code to perform trivial operation on Blitline */
+/* Requires an APPLICATION_ID which you can get from blitline.com for free and without obligation, or e
+ven an email. */
 
 var Blitline = require('./lib/blitline');
 
-/**
- * Listen on port 80.
- */
 var blitline = new Blitline();
 /* Replace MY_APP_ID with your Blitline application_id */
 var job = blitline.addJob("MY_APP_ID", "http://www.google.com/intl/en_com/images/srpr/logo3w.png");
