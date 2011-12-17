@@ -14,7 +14,7 @@ var sepia_function = blur_function.addFunction("sepia_tone", null, "my_blurred_s
 /* Once blurred, crop to 50x50 */
 var crop_function = sepia_function.addFunction("resize_to_fill", { width: 50, height: 50}, "my_sepia_tone_blurred_cropped_image");
 
-blitline.postHttp(function(response) {
+blitline.postJobs(function(response) {
   console.log(response);  
 });
 
