@@ -1,0 +1,16 @@
+{
+  "author": "Blitline Developer <developer@blitline.com>",
+  "name": "blitline",
+  "description": "Thin wrapper around the Blitline service. No rocket science here, just a helper wrapper with some primitive validation",
+  "version": "1.1.0",
+  "repository": {
+    "type" : "git",
+    "url": ""
+  },
+  "main" : "main.js"
+  "engines": {
+    "node": "~0.4.9"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
