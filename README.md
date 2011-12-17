@@ -16,7 +16,7 @@ Once installed, you can try the following code in your NodeJS app:
 ```javascript
 
     var Blitline = require('./lib/blitline');
-    
+
     var blitline = new Blitline();
     /* Replace MY_APP_ID with your Blitline application_id */
     var job = blitline.addJob("MY_APP_ID", "http://www.google.com/intl/en_com/images/srpr/logo3w.png");
@@ -26,7 +26,7 @@ Once installed, you can try the following code in your NodeJS app:
     var sepia_function = blur_function.addFunction("sepia_tone", null, "my_blurred_sepia_toned_image");
     /* Once blurred, crop to 50x50 */
     var crop_function = sepia_function.addFunction("resize_to_fill", { width: 50, height: 50}, "my_sepia_tone_blurred_cropped_image");
-    
+
     blitline.postHttp(function(response) {
       console.log(response);
     });
