@@ -1,4 +1,7 @@
-= blitline
+Blitline_Node
+========
+This is a thin wrapper around the blitline web service. Blitline provides a simple web based image processing service.
+
 You must first have a Blitline.com account to successfully use the gem. You can obtain one (free and without obligation, not even an email address) by going to http://www.blitline.com
 
 Once you have your account, you will need to find you ACCOUNT_ID which you can get by logging in and clicking on the *Account* tab.
@@ -10,8 +13,10 @@ For your node project, simply npm install it
 
 Once installed, you can try the following code in your NodeJS app:
 
-    var Blitline = require('./lib/blitline');
+```javascript
 
+    var Blitline = require('./lib/blitline');
+    
     var blitline = new Blitline();
     /* Replace MY_APP_ID with your Blitline application_id */
     var job = blitline.addJob("MY_APP_ID", "http://www.google.com/intl/en_com/images/srpr/logo3w.png");
@@ -21,11 +26,12 @@ Once installed, you can try the following code in your NodeJS app:
     var sepia_function = blur_function.addFunction("sepia_tone", null, "my_blurred_sepia_toned_image");
     /* Once blurred, crop to 50x50 */
     var crop_function = sepia_function.addFunction("resize_to_fill", { width: 50, height: 50}, "my_sepia_tone_blurred_cropped_image");
-
+    
     blitline.postHttp(function(response) {
       console.log(response);
     });
 
+```
 
 And you will get JSON back describing where the resulting image will be located
 There are many more things you can do with images (including pushing them to your own S3 buckets).
