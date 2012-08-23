@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/blitline-dev/blitline_node.png)](http://travis-ci.org/blitline-dev/blitline_node)
 Blitline_Node
 ========
 This is a thin wrapper around the blitline web service. Blitline provides a simple web based image processing service.
