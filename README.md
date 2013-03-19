@@ -1,5 +1,20 @@
-Blitline_Node
-========
+DEPRECATED:
+----------------
+
+The blitline_node package has been deprecated and will no longer be updated. It will continue to work, as is, indefinitely, but we
+recommend switching to the newer "simple_blitline_node" located here : 
+
+https://github.com/blitline-dev/simple_blitline_node 
+
+You will be happy you switched. It makes everything easier...
+
+
+But if you are happier with the old way...
+
+----------------
+
+###### blitline_node
+--------------------
 This is a thin wrapper around the blitline web service. Blitline provides a simple web based image processing service.
 
 You must first have a Blitline.com account to successfully use the gem. You can obtain one (free and without obligation, not even an email address) by going to http://www.blitline.com
